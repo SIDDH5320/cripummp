@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: linear-gradient(to top, bisque, white);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+header {
+  
+  color: white;
+  padding: 20px;
+
+}
+
+.logo {
+  max-width: 50%; /* Adjust as needed */
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 80%; /* Adjust as needed */
+ 
+}
+
+.image {
+  
+    height: auto; /* Maintain aspect ratio */
+  max-width: 45%; /* Adjust as needed */
+  border-radius: 10px; /* Add border radius */
+  
+}
+.imagee{
+  max-width: 100%; /* Adjust as needed */
+  border-radius: 10px; /* Add border radius */
+}
+.redhr{
+  background-color: #ff0000;
+  height: 2px;
+  margin: 0 40px;
+}
+
+footer {
+  background-color: #ff0000;
+  color: white;
+  padding: 20px;
+  text-align: center;
+
+  
+}
+.footer-content {
+  display: flex;
+  justify-content: center;
+  gap: 10%; /* Adjust the gap between <p> elements */
+}
+
+
+.products{
+  text-align: center;
+}
+.footer-content a{
+  color: #fff;
+  text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  .image {
+    max-width: 100%;
+  }
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
